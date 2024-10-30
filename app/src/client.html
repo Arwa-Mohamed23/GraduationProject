@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Contract - For Requester</title>
+    <link rel="icon" href="assets/photos/logo.png">
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+    .top-left-container {
+   position: absolute;
+   top: 10px;
+   left: 1210px;
+   display: flex;
+   align-items: center;
+}
+.top-left-link {
+   display: flex;
+   align-items: center;
+   text-decoration: none; /* Remove underline from link */
+   color: inherit; /* Inherit text color */
+}
+.top-left-image {
+   width: 40px; /* Adjust the width as needed */
+   height: auto; /* Maintain aspect ratio */
+}
+.project-name {
+   font-size: 24px; /* Adjust the font size as needed */
+   font-weight: bold; /* Make the text bold */
+   color:  #fff;   /* Change the text color */
+   margin-left: 0px; 
+}
+  </style>
+  <body style="background-color:#070119;">
+    <div class="top-left-container">
+      <a href="index.html" class="top-left-link">
+         <img src="assets/photos/logo.png" alt="Top Left Image" class="top-left-image">
+         <span class="project-name">Trust it</span>
+      </a>
+     </div>
+    <div class="p-1 mb-1 bg-gradient text-white rounded-3">
+      <div class="container-fluid py-3">
+        <h1 class="display-7 fw-bold text-white">Requester Smart Contract</h1>
+        <div class="row">
+          <div class="col-8">
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control" placeholder="Enter contract address" id="txt-contract-address">
+            </div>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-lg text-white" style="background-color:#009688;" onclick="App.btnGoClient()" 
+            type="button" id="btn-Deploy"
+            data-bs-toggle="popover" title="Error" 
+            data-bs-content="Smart Contract Not Found"
+            data-bs-trigger="manual">
+              Go
+            </button>
+            <div class="spinner-border spinner-border-sm d-none" role="status" id="spn-load">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-2 d-none" id="con-contract">
+      <div class="row">
+        <div class="col-6">
+          <ul class="list-group">
+            <li class="list-group-item" style="color: #2c1962;"><span class="fw-bold">Address: </span><span id="lbl-contract-address"></span></span></li>
+            <li class="list-group-item" style="color: #2c1962;"><span class="fw-bold">Provider's Wallet: </span><span id="lbl-freelancer-address"></span></li>
+            <li class="list-group-item" style="color: #2c1962;"><span class="fw-bold">Requester's Wallet: </span><span id="lbl-client-address"></li>
+            <li class="list-group-item" style="color: #2c1962;"><span class="fw-bold">Project State: </span><span class="badge" id="lbl-project-status"></span></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="card">
+              <div class="card-header fw-bold text-center" style="color: #2c1962;">Total Value (ETH)</div>
+              <div class="card-body">
+              <p class="card-text text-center"><span class="fs-1" id="lbl-total-eth"></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <div class="card-header fw-bold text-center" style="color: #2c1962;">Disbursed (ETH)</div>
+            <div class="card-body">
+            <p class="card-text text-center"><span class="fs-1" id="lbl-disbursed-eth"></span></p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <br />
+
+      <button class="btn btn-lg text-white" style="background-color:#3E3AF2;" type="button" id="btn-Accept-Project" onclick="App.btnAcceptProject()">Accept Project</button>
+      <button class="btn btn-lg text-white" style="background-color:#04432a;" type="button" id="btn-Refresh" onclick="App.btnRefresh('client')">Refresh</button>
+      <div class="spinner-border spinner-border-sm d-none" role="status" id="spn-contract-action"></div>
+    </div>
+
+    <table class="table table-striped table-hover table-light d-none" style="color: #2c1962;" id="tbl-schedule-table">
+      <thead>
+        <tr>
+          <th scope="col" data-field="short-code">Short Code</th>
+          <th scope="col" data-field="description">Description</th>
+          <th scope="col" class="text-end" data-field="value">Value (in ETH)</th>
+          <th scope="col" data-field="state">State</th>
+          <th scope="col" data-field="state">Action</th>
+        </tr>
+      </thead>
+      <tbody id="schedule-table-body">
+
+      </tbody>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>

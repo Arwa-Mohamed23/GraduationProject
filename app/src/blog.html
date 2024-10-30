@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trust it Blog</title>
+    <link rel="icon" href="assets/photos/logo.png">
+    <!-- css link -->
+    <link rel="stylesheet" href="blog.css" />
+    <!-- box icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="top-left-container">
+      <a href="index.html" class="top-left-link">
+         <img src="assets/photos/logo.png" alt="Top Left Image" class="top-left-image">
+         <span class="project-name">Trust it</span>
+      </a>
+     </div>
+    <!-- banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <h1>What is blockchain?</h1>
+        <p>
+          A blockchain is a digitally distributed ledger that records transactions and information across a decentralized network. There are different types of blockchains. OpenSea is compatible with the Ethereum, Polygon, Klaytn, Arbitrum, Optimism, Avalanche, and BNB Chain blockchains.
+        </p>
+        <button class="btn" onclick="window.location.href='https://opensea.io/learn/blockchain/what-is-blockchain'">Read</button>
+      </div>
+    </div>
+
+    <!-- featured post -->
+    <section>
+        <div class="featured-left">
+          <div class="featured-card">
+            <img src="assets/photos/web3.webp" alt="" />
+            <h2 class="">What is web3?</h2>
+            <p>
+              Web3 is the name given to the concept of a decentralized internet built on blockchain technology.
+            </p>
+            <button class="btn-outline" onclick="window.location.href='https://opensea.io/learn/web3/what-is-web3'">Read </button>
+          </div>
+          <div class="featured-card">
+            <img src="assets/photos/smartcontract.png" alt="" />
+            <h2>What is a smart contract?</h2>
+            <p>
+              Smart contracts are blockchain-based automated computer programs that enforce their coded rules. Using “if this, then that” logic, smart contracts power NFTs and dApps on the blockchain. Buying and selling NFTs using OpenSea is powered by the smart contract protocol, Seaport.
+            </p>
+            <button class="btn-outline" onclick="window.location.href='https://opensea.io/learn/blockchain/what-is-a-smart-contract'">Read </button>
+          </div>
+          <div class="featured-card">
+            <img src="assets/photos/wallet.png" alt="" />
+            <h2>What is MetaMask wallet?</h2>
+            <p>
+              MetaMask Wallet is a non-custodial crypto wallet designed for use on the Ethereum blockchain. It is a non-custodial wallet, meaning users always control their private keys and funds.
+            </p>
+            <button class="btn-outline" onclick="window.location.href='https://opensea.io/learn/web3/metamask-wallet-what-to-know'">Read </button>
+          </div>
+          <div class="featured-card">
+            <img src="assets/photos/Ether.png" alt="" />
+            <h2>What is Ethereum?</h2>
+            <p>
+              Ethereum is a decentralized, open-source blockchain with smart contract functionality. Its native cryptocurrency is Ether (ETH), and it’s the largest blockchain for NFTs.
+            </p>
+            <button class="btn-outline" onclick="window.location.href='https://opensea.io/learn/blockchain/what-is-ethereum'">Read </button>
+          </div>
+          <div class="featured-card">
+            <img src="assets/photos/gasfees.png" alt="" />
+            <h2>What blockchain gas fees?</h2>
+            <p>
+              In web3, the term “gas fee” refers to the payment needed to execute transactions on the blockchain. These payments compensate the node operators who keep the blockchain functioning. This validation helps ensure the blockchain has a permanent, immutable record. 
+            </p>
+            <button class="btn-outline" onclick="window.location.href='https://opensea.io/learn/blockchain/nft-gas-fees'">Read </button>
+          </div>
+          <div class="featured-card">
+            <img src="assets/photos/cryptocurrency.jpeg" alt="" />
+            <h2>What is cryptocurrency?</h2>
+            <p>
+              Cryptocurrency is digital currency that exists on a decentralized system called the blockchain. Cryptocurrency serves as an umbrella term for all digital currencies.
+            </p>
+            <button class="btn-outline" onclick="window.location.href='https://opensea.io/learn/web3/what-is-cryptocurrency'">Read </button>
+          </div>
+        </div>
+    <!-- script tags -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      
+window.onscroll = () => {
+  menu.classList.remove("bx-x");
+  navbar.classList.remove("open");
+};
+
+const sr = ScrollReveal({
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  reset: true
+})
+
+sr.reveal('.banner-content, .newsletter, .blog-header', {delay: 200, origin: 'left'})
+sr.reveal('.featured-left, .featured-right, .blog-card', {delay: 200, origin: 'top'})
+  </script>
+  </body>
+</html>

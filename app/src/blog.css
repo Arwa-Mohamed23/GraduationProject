@@ -1,0 +1,231 @@
+@import url("https://fonts.cdnfonts.com/css/neometric-2");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color:#070119;
+  font-family: "Neometric Alt", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.top-left-container {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+}
+.top-left-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+}
+.top-left-image {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.project-name {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  color:  #fff;   /* Change the text color */
+  margin-left: 0px; 
+}
+section {
+  padding: 25px 5%;
+  margin: 50px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* banner styling */
+.banner {
+  background-color: rgb(255, 255, 255);
+  background: url(assets/photos/blockchain.webp),
+    linear-gradient(
+      to top,
+      #070119 0%,
+      #07011903 85%
+    );
+  min-height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  object-fit: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  height: 100%;
+  padding: 80px 5%;
+}
+
+.banner-content {
+  color: #fff;
+  width: 45%;
+}
+
+.banner-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+}
+.banner-content p {
+  margin-bottom: 20px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.btn {
+  padding: 12px 22px;
+  background:#009688;
+  font: 1.125rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.34s ease-in;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  background: #009688;
+}
+
+/* featured post */
+.featured-left {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 2.7rem;
+  align-items: start;
+}
+
+.featured-card {
+  width: 100%;
+}
+
+.featured-card img {
+  border-radius: 8px;
+  margin-bottom: 18px;
+  width: 100%;
+  height: 280px;
+}
+
+.featured-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: var(--heading-color);
+  padding-right: 10px;
+
+  /* to remain title in 2 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.featured-card p {
+  padding-right: 10px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  line-height: 1.5;
+
+  /* to remain title in 2 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-outline {
+  color: #fff;
+  padding: 12px 22px;
+  font: 1.125rem;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 4px;
+  border: 2px solid#009688;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.34s ease-in;
+}
+
+.btn-outline:hover {
+  transform: translateY(-5px);
+  background: #009688;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.15rem;
+  color: var(--heading-color);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.readme-btn {
+  color:#009688;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  border-bottom: 2px solid var(--text-color);
+}
+
+@media screen and (max-width: 576px) {
+  /* banner style */
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  /* featured post */
+  .featured-post {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured-card {
+    width: 100%;
+  }
+  .featured-left {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 788px){
+.banner-content{
+  width: 100%;
+}
+  .featured-post{
+    grid-template-columns: 1fr;
+  }
+  .web-pages{
+    margin-top: 48px;
+  }
+
+}
