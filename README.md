@@ -1,6 +1,13 @@
 # Trust It
-is a system that provides a secure payment system or service request through trusted individuals to activate a smart contract between the parties. The smart contract begins 
-automatic execution until the specified time, with both parties receiving funds and services.
-This is done by agreeing to the contract terms. The service requester pays a portion of the amount, and notifications are sent to the service provider to start the work.
+ The project aims to help service providers and service
+requesters by creating a smart contract between the two parties
+using blockchain technology that guarantees the rights of both
+parties, which includes the following characteristics:
+  - The platform makes sure that information can move smoothly
+    between different parts, improving how transactions work.
+  - The platform uses smart technology to make sure transactions
+    are recorded and checked securely.
+  - It has a safe and reliable way for people to pay .
+
 ##  Use Case Diagrams
 <img src="https://github.com/Arwa-Mohamed23/Trust-it-Website/blob/main/app/src/assets/photos/usecase.PNG">
