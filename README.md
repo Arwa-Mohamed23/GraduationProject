@@ -9,5 +9,5 @@ parties, which includes the following characteristics:
     are recorded and checked securely.
   - It has a safe and reliable way for people to pay .
 
-##  Use Case Diagrams
+##  Use Case
 <img src="https://github.com/Arwa-Mohamed23/Trust-it-Website/blob/main/app/src/assets/photos/usecase.PNG">
