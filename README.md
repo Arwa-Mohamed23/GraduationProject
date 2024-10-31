@@ -8,6 +8,3 @@ parties, which includes the following characteristics:
   - The platform uses smart technology to make sure transactions
     are recorded and checked securely.
   - It has a safe and reliable way for people to pay .
-
-##  Use Case
-<img src="https://github.com/Arwa-Mohamed23/Trust-it-Website/blob/main/app/src/assets/photos/usecase.PNG">
